@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="title_placeholder">Push-Ups</string>
+	<string name="home">Go home</string>
+	<string name="left">%1$s are missing. You can do it better!</string>
+</resources>

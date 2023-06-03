@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/dialog_background">
+
+	<TextView
+		android:id="@+id/changeYourTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginTop="12dp"
+		android:fontFamily="@font/montserrat_semibold"
+		android:text="@string/edit_weight"
+		android:textColor="@color/white"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/inputLayout"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="25dp"
+		android:layout_marginTop="15dp"
+		android:background="@android:color/transparent"
+		android:hint="@string/weight"
+		android:textColorHint="@color/purple"
+		app:hintAnimationEnabled="true"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/changeYourTextView"
+		app:layout_constraintTop_toBottomOf="@+id/changeYourTextView">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/valueEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:backgroundTint="@color/purple"
+			android:cursorVisible="true"
+			android:inputType="number"
+			android:textColor="@color/white"
+			android:textCursorDrawable="@color/purple" />
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<Button
+		android:id="@+id/changeButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp"
+		android:layout_marginEnd="12dp"
+		android:layout_marginTop="16dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/roboto"
+		android:text="@string/change"
+		android:textColor="@color/purple"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/inputLayout" />
+
+	<Button
+		android:id="@+id/cancelButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/roboto"
+		android:text="@string/cancel"
+		android:textColor="@color/purple"
+		app:layout_constraintBottom_toBottomOf="@+id/changeButton"
+		app:layout_constraintEnd_toStartOf="@+id/changeButton"
+		app:layout_constraintTop_toTopOf="@+id/changeButton"
+		app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

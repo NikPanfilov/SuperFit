@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="times">Times left</string>
+	<string name="count_placeholder">40</string>
+	<string name="finish">Finish</string>
+</resources>

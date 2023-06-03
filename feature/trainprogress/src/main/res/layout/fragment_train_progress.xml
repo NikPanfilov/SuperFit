@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/train_background">
+
+	<ImageButton
+		android:id="@+id/backButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		android:background="@android:color/transparent"
+		android:minHeight="48dp"
+		android:minWidth="48dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/arrow_back" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_percent="0.45" />
+
+	<TextView
+		android:id="@+id/pushupsTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/pushup"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline2"
+		app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/pushupsLastTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/last_times"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+	<TextView
+		android:id="@+id/pushupsProgressTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/progress"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/pushupsLastTextView" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.2" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.3" />
+
+	<TextView
+		android:id="@+id/plankTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/plank"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline3"
+		app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/plankLastTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/last_seconds"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+	<TextView
+		android:id="@+id/plankProgressTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/progress"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/plankLastTextView" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.45" />
+
+	<TextView
+		android:id="@+id/crunchTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/crunch"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline4"
+		app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/crunchLastTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/last_times"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+	<TextView
+		android:id="@+id/crunchProgressTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/progress"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/crunchLastTextView" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.65" />
+
+	<TextView
+		android:id="@+id/squatsTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/squat"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline5"
+		app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/squatsLastTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/last_times"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+	<TextView
+		android:id="@+id/squatsProgressTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/progress"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/squatsLastTextView" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.9" />
+
+	<TextView
+		android:id="@+id/runningTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/running"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline6"
+		app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+	<TextView
+		android:id="@+id/runningLastTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/last_meters"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+	<TextView
+		android:id="@+id/runningProgressTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/progress"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/runningLastTextView" />
+
+	<TextView
+		android:id="@+id/textView2"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:text="@string/train_progress"
+		app:layout_constraintBottom_toBottomOf="@+id/backButton"
+		app:layout_constraintStart_toEndOf="@+id/backButton"
+		app:layout_constraintTop_toTopOf="@+id/backButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

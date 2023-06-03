@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pushup">Push-Ups</string>
+	<string name="pushup_text">Push-ups exercise the pectoral muscles, triceps, and anterior deltoids.</string>
+
+	<string name="plank">Plank</string>
+	<string name="plank_text">The plank strengthens the abdominals, back and shoulders. </string>
+
+	<string name="squat">Squats</string>
+	<string name="squat_text">Сonsidered a vital exercise for increasing the strength and size of the lower body.</string>
+
+	<string name="crunch">Crunch</string>
+	<string name="crunch_text">It involves the entire abs, but primarily it works the rectus abdominis muscle.</string>
+
+	<string name="running">Running</string>
+	<string name="running_text">It develops endurance, strengthens the legs and the cardiovascular system.</string>
+</resources>

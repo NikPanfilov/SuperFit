@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/black">
+
+	<ImageButton
+		android:id="@+id/backButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		android:background="@android:color/transparent"
+		android:minHeight="48dp"
+		android:minWidth="48dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/arrow_back" />
+
+	<TextView
+		android:id="@+id/weightTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="13dp"
+		android:text="@string/weight"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+	<TextView
+		android:id="@+id/trainingTextView"
+		style="@style/Header.White"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		android:text="@string/training"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+	<com.github.mikephil.charting.charts.LineChart
+		android:id="@+id/weightChart"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginHorizontal="16dp"
+		android:layout_marginTop="13dp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/weightTextView"
+		app:layout_constraintTop_toBottomOf="@+id/weightTextView">
+
+	</com.github.mikephil.charting.charts.LineChart>
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.4" />
+
+	<HorizontalScrollView
+		android:id="@+id/scrollView2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="22dp"
+		android:isScrollContainer="true"
+		android:nestedScrollingEnabled="true"
+		android:scrollbars="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/trainingTextView"
+		app:layout_constraintTop_toBottomOf="@+id/trainingTextView">
+
+		<com.google.android.material.chip.ChipGroup
+			android:id="@+id/chipGroup"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:nestedScrollingEnabled="true"
+			android:orientation="vertical"
+			app:singleLine="true"
+			app:singleSelection="true">
+
+			<com.google.android.material.chip.Chip
+				android:id="@+id/pushupsChip"
+				style="@style/Chip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="@string/pushup" />
+
+			<com.google.android.material.chip.Chip
+				android:id="@+id/plankChip"
+				style="@style/Chip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/plank" />
+
+			<com.google.android.material.chip.Chip
+				android:id="@+id/crunchChip"
+				style="@style/Chip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/crunch" />
+
+			<com.google.android.material.chip.Chip
+				android:id="@+id/squatsChip"
+				style="@style/Chip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/squat" />
+
+			<com.google.android.material.chip.Chip
+				android:id="@+id/runningChip"
+				style="@style/Chip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/running" />
+
+		</com.google.android.material.chip.ChipGroup>
+
+	</HorizontalScrollView>
+
+	<com.github.mikephil.charting.charts.BarChart
+		android:id="@+id/trainingChart"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="16dp"
+		android:layout_marginHorizontal="16dp"
+		android:layout_marginTop="26dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/trainingTextView"
+		app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+	</com.github.mikephil.charting.charts.BarChart>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

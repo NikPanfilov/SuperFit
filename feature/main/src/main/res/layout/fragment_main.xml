@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/backgroundImageView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:scaleType="centerCrop"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/background_main" />
+
+	<TextView
+		android:id="@+id/superFitTextView"
+		style="@style/AppNameMain"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:text="@string/super_fit"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<View
+		android:id="@+id/mainRectangleView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginTop="-24dp"
+		android:background="@drawable/background_rectangle"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/backgroundImageView"
+		app:layout_constraintVertical_bias="1.0" />
+
+	<TextView
+		android:id="@+id/myBodyTextView"
+		style="@style/Header"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="24dp"
+		android:text="@string/my_body"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/mainRectangleView" />
+
+	<TextView
+		android:id="@+id/lastExercisesTextView"
+		style="@style/Header"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:text="@string/last"
+		app:layout_constraintStart_toStartOf="@+id/myBodyTextView"
+		app:layout_constraintTop_toBottomOf="@+id/trainingImageView" />
+
+	<ImageView
+		android:id="@+id/trainingImageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		app:layout_constraintStart_toStartOf="@+id/myBodyTextView"
+		app:layout_constraintTop_toBottomOf="@+id/myBodyTextView"
+		app:srcCompat="@drawable/my_body" />
+
+	<View
+		android:id="@+id/trainingRectangleView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginStart="-1dp"
+		android:background="@drawable/my_body_rectangle"
+		app:layout_constraintBottom_toBottomOf="@+id/trainingImageView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/trainingImageView"
+		app:layout_constraintTop_toTopOf="@+id/trainingImageView" />
+
+	<ImageView
+		android:id="@+id/icWeightImageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		app:layout_constraintStart_toStartOf="@+id/trainingRectangleView"
+		app:layout_constraintTop_toTopOf="@+id/trainingRectangleView"
+		app:srcCompat="@drawable/ic_weight" />
+
+	<ImageView
+		android:id="@+id/icHeightImageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		app:layout_constraintStart_toStartOf="@+id/icWeightImageView"
+		app:layout_constraintTop_toBottomOf="@+id/icWeightImageView"
+		app:srcCompat="@drawable/ic_height" />
+
+	<TextView
+		android:id="@+id/descriptionTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:fontFamily="@font/montserrat_extralight"
+		android:text="@string/details"
+		android:textColor="@color/gray"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="@+id/trainingRectangleView"
+		app:layout_constraintStart_toStartOf="@+id/icWeightImageView" />
+
+	<TextView
+		android:id="@+id/weightTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:fontFamily="@font/montserrat_semibold"
+		android:text="@string/undefined"
+		android:textColor="@color/white"
+		app:layout_constraintStart_toEndOf="@+id/icWeightImageView"
+		app:layout_constraintTop_toTopOf="@+id/icWeightImageView" />
+
+	<TextView
+		android:id="@+id/heightTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/montserrat_semibold"
+		android:text="@string/undefined"
+		android:textColor="@color/white"
+		app:layout_constraintStart_toEndOf="@+id/icWeightImageView"
+		app:layout_constraintStart_toStartOf="@+id/weightTextView"
+		app:layout_constraintTop_toTopOf="@+id/icHeightImageView" />
+
+	<TextView
+		android:id="@+id/seeAllTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:fontFamily="@font/montserrat_extralight"
+		android:text="@string/see_all"
+		android:textColor="@color/dark_gray"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="@+id/lastExercisesTextView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/lastExercisesTextView" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/lastExercisesRecyclerView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="8dp"
+		android:layout_marginTop="8dp"
+		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+		app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+		app:layout_constraintEnd_toEndOf="@+id/seeAllTextView"
+		app:layout_constraintStart_toStartOf="@+id/lastExercisesTextView"
+		app:layout_constraintTop_toBottomOf="@+id/lastExercisesTextView"
+		tools:itemCount="2"
+		tools:listitem="@layout/exercises_item" />
+
+	<Button
+		android:id="@+id/signOutButton"
+		style="@style/NavigationButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="11dp"
+		android:layout_marginStart="16dp"
+		android:drawableLeft="@drawable/ic_left_black"
+		android:text="@string/sign_out"
+		android:textColor="@color/black"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<View
+		android:id="@+id/myBodyView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="@+id/trainingImageView"
+		app:layout_constraintEnd_toEndOf="@+id/trainingRectangleView"
+		app:layout_constraintStart_toStartOf="@+id/trainingImageView"
+		app:layout_constraintTop_toTopOf="@+id/trainingImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

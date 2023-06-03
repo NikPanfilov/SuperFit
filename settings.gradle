@@ -1,0 +1,42 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+		google()
+		mavenCentral()
+	}
+}
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		google()
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+	}
+}
+rootProject.name = "Mobile-SuperFit-Lab2"
+include ':app'
+include ':core'
+include ':feature'
+include ':shared'
+include ':core:network'
+include ':core:navigation'
+include ':shared:login'
+include ':feature:signUp'
+include ':feature:signIn'
+include ':feature:main'
+include ':feature:exercises'
+include ':feature:crunch'
+include ':feature:plank'
+include ':feature:squats'
+include ':feature:pushups'
+include ':feature:running'
+include ':feature:result'
+include ':feature:mybody'
+include ':feature:trainprogress'
+include ':feature:statistics'
+include ':core:theme'
+include ':core:extensions'
+include ':shared:trainings'
+include ':shared:body'
+include ':feature:image-list'
+include ':feature:image'

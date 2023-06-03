@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="left">Seconds left</string>
+	<string name="count_placeholder">40</string>
+	<string name="finish">Finish</string>
+
+	<string name="title">Start the training?</string>
+	<string name="text">You need to repeat the exercise %1$d seconds. Are you ready?</string>
+	<string name="later">Later</string>
+	<string name="go">Go!</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="my_body">My Body</string>
+	<string name="my_progress">My Progress</string>
+	<string name="see_all">See all</string>
+	<string name="train_progress">Train progress</string>
+	<string name="statistics">Statistics</string>
+	<string name="kg">kg</string>
+	<string name="cm">cm</string>
+	<string name="edit">Edit</string>
+	<string name="edit_weight">Change your weight</string>
+	<string name="edit_height">Change your height</string>
+	<string name="weight">Weight</string>
+	<string name="height">Height</string>
+	<string name="change">Change</string>
+	<string name="cancel">Cancel</string>
+	<string name="new_value">New value</string>
+
+	<string name="weight_placeholder">Undefined</string>
+	<string name="height_placeholder">Undefined</string>
+	<string name="date_placeholder">21.04.2019</string>
+</resources>

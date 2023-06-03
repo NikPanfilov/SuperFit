@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="super_fit">SuperFit</string>
+	<string name="username">UserName</string>
+	<string name="email">Email</string>
+	<string name="code">Code</string>
+	<string name="repeat_code">Repeat Code</string>
+	<string name="sign_up">Sing Up</string>
+	<string name="sign_in">Sign In</string>
+</resources>

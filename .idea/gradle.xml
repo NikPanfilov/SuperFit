@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/extensions" />
+            <option value="$PROJECT_DIR$/core/navigation" />
+            <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/core/theme" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/crunch" />
+            <option value="$PROJECT_DIR$/feature/exercises" />
+            <option value="$PROJECT_DIR$/feature/image" />
+            <option value="$PROJECT_DIR$/feature/image-list" />
+            <option value="$PROJECT_DIR$/feature/main" />
+            <option value="$PROJECT_DIR$/feature/mybody" />
+            <option value="$PROJECT_DIR$/feature/plank" />
+            <option value="$PROJECT_DIR$/feature/pushups" />
+            <option value="$PROJECT_DIR$/feature/result" />
+            <option value="$PROJECT_DIR$/feature/running" />
+            <option value="$PROJECT_DIR$/feature/signIn" />
+            <option value="$PROJECT_DIR$/feature/signUp" />
+            <option value="$PROJECT_DIR$/feature/squats" />
+            <option value="$PROJECT_DIR$/feature/statistics" />
+            <option value="$PROJECT_DIR$/feature/trainprogress" />
+            <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/body" />
+            <option value="$PROJECT_DIR$/shared/login" />
+            <option value="$PROJECT_DIR$/shared/trainings" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

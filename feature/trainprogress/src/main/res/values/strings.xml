@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="train_progress">Train progress</string>
+
+	<string name="last_times">Last train: <b>%1$s times</b></string>
+	<string name="last_seconds">Last train: <b>%1$s seconds</b></string>
+	<string name="last_meters">Last train: <b>%1$s meters</b></string>
+
+	<string name="progress">Progress: <b>%d %%</b></string>
+
+	<string name="undefined">Undefined</string>
+</resources>

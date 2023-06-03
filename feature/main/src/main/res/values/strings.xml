@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="super_fit">SuperFit</string>
+	<string name="my_body">My body</string>
+	<string name="last">Last exercises</string>
+	<string name="details">Details</string>
+	<string name="undefined">Undefined</string>
+	<string name="see_all">See all</string>
+	<string name="sign_out">Sign Out</string>
+</resources>
